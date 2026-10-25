@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Haditech: the electric car</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="scene" id="scene">
+<div class="sticky" style="background:#05070c">
+<img class="bgimg" id="bg" alt="" aria-hidden="true">
+<div class="vig"></div>
+<nav class="top wrap"><b>HADITECH</b><a class="btn ghost" href="#reserve">Book a test drive</a></nav>
+<div class="stack"><h2 class="ttl" id="tt" aria-hidden="true">Haditech</h2><div class="card" id="card"><canvas id="cv" width="832" height="480" style="position:absolute;inset:0;width:100%;height:100%"></canvas></div><h2 class="ttl" id="tb" aria-hidden="true">Electric</h2></div>
+<div class="hud"><svg viewBox="0 0 44 44" width="56" height="56" aria-hidden="true"><circle cx="22" cy="22" r="19" fill="none" stroke="#ffffff22" stroke-width="3"/><circle id="ring" cx="22" cy="22" r="19" fill="none" stroke="var(--amb)" stroke-width="3" stroke-linecap="round" stroke-dasharray="119.4" stroke-dashoffset="119.4" transform="rotate(-90 22 22)"/></svg><span id="pct">0%</span><em>Scroll to build the car</em></div>
+</div></section>
+<header class="hero">
+<div class="wrap">
+<h1 id="make">Make it yours.</h1><p class="lede">Pick the paint, the trim and the light you want to sit in.</p>
+
+<div class="stage" aria-live="polite">
+<div class="view on" id="v-ext"><div class="cutout" id="cutout"><div class="floor"></div><img id="cutimg" src="images/black-haditech-coupe.webp" alt="Black Haditech coupe"><img class="pi" alt="Red coupe" src="images/red-coupe.webp"><img class="pi" alt="Blue coupe" src="images/blue-coupe.webp"><img class="pi" alt="Purple coupe" src="images/purple-coupe.webp"><img class="pi" alt="Gray coupe" src="images/gray-coupe.webp"><div class="tint" id="tint"></div></div></div>
+
+<div class="view" id="v-int"><div class="cab" style="aspect-ratio:632/421"><img class="ti on" alt="Red trim cabin" src="images/red-trim-cabin.webp"><img class="ti" alt="Blue trim cabin" src="images/blue-trim-cabin.webp"><img class="ti" alt="White trim cabin" src="images/white-trim-cabin.webp"><img class="ti" alt="Orange trim cabin" src="images/orange-trim-cabin.webp"><img class="li" alt="Amber cabin light" src="images/amber-cabin-light.webp"><img class="li" alt="Green cabin light" src="images/green-cabin-light.webp"><img class="li" alt="Pink cabin light" src="images/pink-cabin-light.webp"><div class="ctint"></div><div class="amb"></div></div></div>
+</div>
+
+<div class="panel" role="group" aria-label="Your preferences">
+<div><h3>View</h3><div class="seg" id="g-view"><button aria-pressed="true" data-v="ext">Exterior</button><button aria-pressed="false" data-v="int">Interior</button></div></div>
+<div id="grp-paint"><h3>Paint</h3><div class="row" id="g-paint"></div></div>
+<div id="grp-amb" hidden><h3>Cabin light</h3><div class="row" id="g-amb"></div></div>
+<div id="grp-trim" hidden><h3>Interior trim</h3><div class="row" id="g-trim"></div></div>
+</div>
+<p class="sum" id="sum"></p>
+</div>
+</header>
+
+<section>
+<div class="wrap">
+<h2>Built around the drive, not the dashboard.</h2>
+<div class="specs">
+<div><strong>520 km</strong><span>Estimated range on one charge</span></div>
+<div><strong>3.4 s</strong><span>0 to 100 km/h</span></div>
+<div><strong>20 min</strong><span>Fast charge from 10 to 80 percent</span></div>
+<div><strong>0.21 Cd</strong><span>Drag coefficient of the body</span></div>
+</div>
+</div>
+</section>
+
+<section class="details" id="details">
+<div class="wrap">
+<h2>The details that matter.</h2>
+<div class="feat">
+<article><small>01</small><h3>Dual-motor drive</h3><p>All-wheel drive with instant torque and a smooth, quiet launch. Drive modes tune throttle, steering weight and regeneration.</p></article>
+<article><small>02</small><h3>Battery and charging</h3><p>A 95 kWh pack with liquid cooling. Fast charging adds a long trip’s worth of range in about 20 minutes.</p></article>
+<article><small>03</small><h3>Screen-first cabin</h3><p>A wide central display, a digital driver cluster, wireless phone charging and over-the-air software updates.</p></article>
+<article><small>04</small><h3>Driver assistance</h3><p>Adaptive cruise control, lane keeping, blind-spot monitoring and automatic emergency braking come as standard.</p></article>
+<article><small>05</small><h3>Sculpted aerodynamics</h3><p>A low nose, flush door handles and an active rear spoiler cut drag and wind noise at speed.</p></article>
+<article><small>06</small><h3>Everyday practical</h3><p>Seats four adults, with a rear boot, a front storage space and a heat pump to protect winter range.</p></article>
+</div>
+<h3 class="sub">Specifications</h3>
+<dl class="spec">
+<div><dt>Powertrain</dt><dd>Dual motor, all-wheel drive</dd></div>
+<div><dt>0 to 100 km/h</dt><dd>3.4 s</dd></div>
+<div><dt>Top speed</dt><dd>250 km/h (limited)</dd></div>
+<div><dt>Battery</dt><dd>95 kWh, liquid cooled</dd></div>
+<div><dt>Range</dt><dd>Up to 520 km (estimated)</dd></div>
+<div><dt>DC fast charging</dt><dd>10 to 80 percent in 20 min</dd></div>
+<div><dt>Home charging</dt><dd>11 kW AC, full charge overnight</dd></div>
+<div><dt>Seats</dt><dd>4</dd></div>
+<div><dt>Warranty</dt><dd>8 years on the battery</dd></div>
+</dl>
+<h3 class="sub">Make it yours</h3>
+<div class="opt">
+<div><b>Paint</b><span>Black</span><span>Red</span><span>Blue</span><span>Purple</span><span>Gray</span></div>
+<div><b>Interior trim</b><span>Red</span><span>Blue</span><span>White</span><span>Orange</span></div>
+<div><b>Cabin light</b><span>White</span><span>Amber</span><span>Green</span><span>Pink</span></div>
+</div>
+<p class="note">Specifications are targets and may change before production.</p>
+</div>
+</section>
+<section class="cta" id="reserve">
+<div class="wrap">
+<img class="cta-car" id="ctacar" alt="Black Haditech coupe"><h2>See your configuration in person.</h2>
+<p>Send us your choices and we will arrange a test drive with the car set up your way.</p>
+<a class="btn" id="mail" href="mailto:hello@haditech.example">Book a test drive</a>
+</div>
+</section>
+<footer>Haditech. Figures shown are targets and may change.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
